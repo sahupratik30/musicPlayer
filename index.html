@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <!-- Main content -->
+    <div class="main_container">
+      <!-- Music container part -->
+      <div class="music_container">
+        <!-- Image here -->
+        <div class="image_div">
+          <img src="images/image1.jpg" alt="image" id="image" />
+        </div>
+        <!-- Music Title Part -->
+        <div class="title_div">
+          <h2 class="title" id="title">O Saki Saki</h2>
+        </div>
+        <!-- Artist part -->
+        <div class="artist_div">
+          <marquee id="artists"
+            >Singers: Neha Kakkar, Tulsi Kumar, B Praak</marquee
+          >
+        </div>
+        <!-- Time part -->
+        <div class="time_div">
+          <p id="current_time">1.78</p>
+          <p id="duration">3.56</p>
+        </div>
+        <!-- Progress Bar Part -->
+        <div class="progress_div">
+          <div class="progress_bar" id="progress_bar"></div>
+        </div>
+        <!-- Audio part -->
+        <audio src="music/music1.mp3" id="music"></audio>
+        <!-- Controls Part -->
+        <div class="controls_div">
+          <i id="previous" class="fas fa-backward" title="Previous"></i>
+          <div class="play">
+            <i class="fas fa-play" id="play" title="Play/Pause"></i>
+          </div>
+          <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
