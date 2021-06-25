@@ -30,3 +30,7 @@ A music player web application 🎵🎵🎵.
 - Make the changes
 - Generate a pull request
 ```
+## Link to view the app
+
+- Link - `https://music-player-app1.herokuapp.com/`
+- [Visit App](https://music-player-app1.herokuapp.com/)
