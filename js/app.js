@@ -109,7 +109,12 @@ function loadSong(song) {
 function playNextSong() {
   isPlaying = true;
   play.classList.replace("fa-play", "fa-pause");
-  image.classList.add("animate");
+  let { duration } = music;
+  if (duration) {
+    image.classList.add("animate");
+  } else {
+    image.classList.remove("animate");
+  }
   songIndex = (songIndex + 1) % songs.length;
   loadSong(songs[songIndex]);
   music.play();
@@ -118,7 +123,12 @@ function playNextSong() {
 function playPreviousSong() {
   isPlaying = true;
   play.classList.replace("fa-play", "fa-pause");
-  image.classList.add("animate");
+  let { duration } = music;
+  if (duration) {
+    image.classList.add("animate");
+  } else {
+    image.classList.remove("animate");
+  }
   songIndex = (songIndex - 1 + songs.length) % songs.length;
   loadSong(songs[songIndex]);
   music.play();
